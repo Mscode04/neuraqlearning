@@ -1,0 +1,47 @@
+export const videoFiles = [
+    {
+      name: "AI_Intro",
+      description: "Introduction to Artificial Intelligence",
+      duration: "10 min",
+      videoUrl: "https://youtu.be/4eFwOGjI5BQ?si=4TFXx13F3CkeaZ45",
+      thumbnail: "/Thumbnails/VID/Ai_1.png",
+      interest: "Artificial Intelligence, Machine Learning",
+      keywords: "AI, neural networks, data science",
+    },
+    {
+      name: "Deep_Learning_Basics",
+      description: "Deep Learning Fundamentals",
+      duration: "15 min",
+      videoUrl: "https://youtu.be/4eFwOGjI5BQ?si=4TFXx13F3CkeaZ45",
+      thumbnail: "/Thumbnails/VID/Ai_1.png",
+      interest: "Deep Learning, Neural Networks",
+      keywords: "Deep Learning, AI, algorithms",
+    },
+    {
+      name: "Neural_Networks",
+      description: "Understanding Neural Networks",
+      duration: "12 min",
+      videoUrl: "https://www.youtube.com/watch?v=Ilg3gGewQ5U",
+      thumbnail: "/Thumbnails/VID/Ai_1.png",
+      interest: "Neural Networks, AI",
+      keywords: "Neural Networks, deep learning, AI",
+    },
+    {
+      name: "Python_for_ML",
+      description: "Python for Machine Learning",
+      duration: "20 min",
+      videoUrl: "https://www.youtube.com/watch?v=7eh4d6sabA0",
+      thumbnail: "/Thumbnails/VID/Ai_1.png",
+      interest: "Python, Machine Learning",
+      keywords: "Python, ML, data science",
+    },
+    {
+      name: "AI_Applications",
+      description: "Real-world Applications of AI",
+      duration: "18 min",
+      videoUrl: "https://www.youtube.com/watch?v=kWmX3pd1f10",
+      thumbnail: "/Thumbnails/VID/Ai_1.png",
+      interest: "Artificial Intelligence, Tech Trends",
+      keywords: "AI, applications, industry",
+    }
+];

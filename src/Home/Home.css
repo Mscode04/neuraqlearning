@@ -1,0 +1,176 @@
+/* General Styles */
+.HomeApp {
+  background-color: #f4f7f6;
+  min-height: 100vh;
+  color: #333;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
+}
+
+/* Topbar Styles */
+.HomeTopbar {
+  height: 60px;
+  background-color: #288598;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  border-radius: 50%;
+}
+
+/* Drawer Styles */
+.HomeDrawer {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.HomeDrawer.open {
+  left: 0;
+}
+
+.HomeDrawerButton {
+  background-color: #288598;
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.HomeDrawerButton:hover {
+  background-color: #1e506b;
+}
+
+.HomeDrawerCloseButton {
+  background: none;
+  border: none;
+  margin-right: auto;
+  color: #288598;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.drawer-content {
+  flex: 1;
+}
+
+.drawer-footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.powered-by {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Banner Section */
+.HomeBanner {
+  background-image: url("../assets/img/home-banner-nurse.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.HomeBanner h1 {
+  margin-bottom: 10px;
+}
+
+.HomeBanner p {
+  font-size: 1.2rem;
+}
+
+
+
+/* Testimonials Section */
+.HomeTestimonials {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-avatar {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.testimonial-card span {
+  font-size: 0.8rem;
+  color: #288598;
+}
+
+/* Footer */
+.HomeFooter {
+  text-align: center;
+  padding: 20px;
+  background-color: #288598;
+  color: white;
+  margin-top: 20px;
+}
+.user-info img{
+ height: 40PX;
+}
