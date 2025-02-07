@@ -12,7 +12,7 @@ export const pdfFiles = [
       name: "DEF",
       description: "Deep Learning Guide",
       pages: 15,
-      filePath: "/Database/DEF.pdf",
+      filePath: "%PUBLIC_URL%/Database/DEF.pdf",
       thumbnail: "/Thumbnails/DEF.png", // Thumbnail image
       interest: "Deep Learning, Neural Networks",
       keywords: "Deep Learning, AI, algorithms",

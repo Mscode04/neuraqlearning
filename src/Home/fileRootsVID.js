@@ -13,7 +13,7 @@ export const videoFiles = [
       description: "Deep Learning Fundamentals",
       duration: "15 min",
       videoUrl: "https://youtu.be/4eFwOGjI5BQ?si=4TFXx13F3CkeaZ45",
-      thumbnail: "/Thumbnails/VID/Ai_1.png",
+      thumbnail: "%PUBLIC_URL%/Thumbnails/VID/Ai_1.png",
       interest: "Deep Learning, Neural Networks",
       keywords: "Deep Learning, AI, algorithms",
     },
