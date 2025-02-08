@@ -31,7 +31,7 @@ function Home({ patientId, userName, userGender }) {
         setCurrentFeedbackIndex((prevIndex) =>
           (prevIndex + 1) % feedbacks.length
         );
-      }, 100000); // Change feedback every 3 seconds
+      }, 4000); // Change feedback every 3 seconds
 
       return () => clearInterval(interval); // Cleanup interval on unmount
     }
@@ -111,27 +111,30 @@ function Home({ patientId, userName, userGender }) {
       </div>
 
       {/* Testimonials Section */}
-      <div className="HomeTestimonials">
-        <h2>What Our Users Say</h2>
-        <div className="testimonial-grid">
-          {feedbacks.length > 0 && (
-            <div className="testimonial-card" key={feedbacks[currentFeedbackIndex].id}>
-              <img
-                src="https://via.placeholder.com/80"
-                alt="User"
-                className="testimonial-avatar"
-              />
-              <p>{feedbacks[currentFeedbackIndex].feedback}</p>
-              <span>- {feedbacks[currentFeedbackIndex].userName}</span>
-              <div className="rating">
-                {Array.from({ length: feedbacks[currentFeedbackIndex].rating }, (_, i) => (
-                  <i key={i} className="bi bi-star-fill"></i>
-                ))}
-              </div>
-            </div>
-          )}
+<div className="HomeTestimonials">
+  <h2>What Our Users Say</h2>
+  <div className="testimonial-grid container">
+    {feedbacks.length > 0 && (
+      <div
+        className={`testimonial-card slide-animation`}
+        key={feedbacks[currentFeedbackIndex].id}
+      >
+        <img
+          src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/df7eac147767277.62c848d68fa9d.gif"
+          alt="User"
+          className="testimonial-avatar"
+        />
+        <div className="rating">
+          <p>{feedbacks[currentFeedbackIndex].feedback} <span>- {feedbacks[currentFeedbackIndex].userName}</span></p>
+          {Array.from({ length: feedbacks[currentFeedbackIndex].rating }, (_, i) => (
+            <i key={i} className="bi bi-star-fill"></i>
+          ))}
         </div>
       </div>
+    )}
+  </div>
+</div>
+
 
       {/* Footer */}
       <footer className="HomeFooter">

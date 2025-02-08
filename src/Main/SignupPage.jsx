@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { db } from "../Firebase/config";
 import { collection, addDoc, query, where, getDocs } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
-// import "./SignupPage.css";
+import "./SignupPage.css";
 
 const generatePatientId = () => {
   return Math.floor(1000000000 + Math.random() * 9000000000).toString();

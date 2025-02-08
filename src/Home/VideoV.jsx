@@ -79,7 +79,11 @@ const VideoV = ({ goBack }) => {
           <div key={index} className="col-lg-4 col-md-6 col-sm-12 mb-3">
             <div className="videov-card shadow-sm text-center" onClick={() => window.open(video.videoUrl, "_blank")}> 
               <div className="videov-card-body">
-                <img src={video.thumbnail} alt={`${video.name} Thumbnail`} className="videov-card-img-top" />
+              <img
+                  src={`${process.env.PUBLIC_URL}${video.thumbnail}`}
+                  alt={`${video.name} Thumbnail`}
+                  className="pdfv-card-img-top"
+                />
                 <h5 className="videov-card-title mt-2">{video.name}</h5>
                 <p className="videov-card-text">{video.description}</p>
                 <p><strong>Duration:</strong> {video.duration}</p>

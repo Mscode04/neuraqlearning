@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Profile.css"; // Import the CSS file
 import { db } from "../Firebase/config";
 import { collection, addDoc } from "firebase/firestore";
@@ -9,7 +9,13 @@ const Profile = ({ patientId, userName }) => {
   const [rating, setRating] = useState(0);
   const [feedback, setFeedback] = useState("");
 
-  const handleOpenModal = () => setIsModalOpen(true);
+  useEffect(() => {
+    const feedbackGiven = localStorage.getItem("feedbackGiven");
+    if (!feedbackGiven) {
+      setIsModalOpen(true);
+    }
+  }, []);
+
   const handleCloseModal = () => setIsModalOpen(false);
 
   const handleStarClick = (value) => {
@@ -30,6 +36,7 @@ const Profile = ({ patientId, userName }) => {
         feedback,
         timestamp: new Date(),
       });
+      localStorage.setItem("feedbackGiven", "true");
       alert("Feedback submitted successfully!");
       handleCloseModal();
     } catch (error) {
@@ -45,7 +52,7 @@ const Profile = ({ patientId, userName }) => {
       </h1>
 
       {/* Feedback Button */}
-      <button className="feedback-button" onClick={handleOpenModal}>
+      <button className="feedback-button" onClick={() => setIsModalOpen(true)}>
         Leave Feedback
       </button>
 
@@ -61,26 +68,6 @@ const Profile = ({ patientId, userName }) => {
           </li>
           <li className="pro-list-item">
             <strong>Address:</strong> 123 Main St, City, Country
-          </li>
-        </ul>
-      </div>
-
-      {/* Terms and Conditions Section */}
-      <div className="pro-section">
-        <h2 className="pro-section-heading">Terms and Conditions</h2>
-        <p className="pro-text">
-          By using this platform, you agree to our terms and conditions. Please
-          read them carefully.
-        </p>
-        <ul className="pro-list">
-          <li className="pro-list-item">
-            You must be at least 18 years old to use this service.
-          </li>
-          <li className="pro-list-item">
-            All content provided is for educational purposes only.
-          </li>
-          <li className="pro-list-item">
-            We reserve the right to modify these terms at any time.
           </li>
         </ul>
       </div>

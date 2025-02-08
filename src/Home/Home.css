@@ -131,7 +131,11 @@
 /* Testimonials Section */
 .HomeTestimonials {
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #1e506b !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonial-grid {
@@ -140,13 +144,47 @@
   gap: 20px;
 }
 
+/* Animation for sliding effect */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation for fading out */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .testimonial-card {
-  background-color: white;
+  background-color: #f9f9f95a;
+  max-width: 300px;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  animation: slideIn 0.6s ease-in-out;
 }
+
+/* Smooth transition when feedback changes */
+.slide-animation {
+  animation: slideIn 0.6s ease-in-out, fadeOut 0.6s ease-in-out alternate;
+}
+
+
 
 .testimonial-avatar {
   border-radius: 50%;
@@ -167,10 +205,15 @@
 .HomeFooter {
   text-align: center;
   padding: 20px;
-  background-color: #288598;
+  background-color: #13454f;
   color: white;
-  margin-top: 20px;
+  
 }
+.testimonial-card img{
+  height: 100px;
+  
+}
+
 .user-info img{
  height: 40PX;
 }

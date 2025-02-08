@@ -44,18 +44,15 @@ const PDFV = ({ goBack }) => {
   const totalPages = Math.ceil(filterFiles.length / itemsPerPage);
   const currentFiles = filterFiles.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
+  // Fixed Download Function
   const handleDownload = (filePath) => {
-    fetch(filePath)
-      .then((response) => response.blob())
-      .then((blob) => {
-        const url = window.URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = filePath.split("/").pop();
-        link.click();
-        window.URL.revokeObjectURL(url);
-      })
-      .catch((error) => console.error("Download error:", error));
+    const url = `${process.env.PUBLIC_URL}${filePath}`;
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = filePath.split("/").pop();
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -113,8 +110,8 @@ const PDFV = ({ goBack }) => {
           <div key={index} className="col-lg-4 col-md-6 col-sm-12 mb-3">
             <div className="pdfv-card shadow-sm text-center">
               <div className="pdfv-card-body">
-                <img
-                  src={file.thumbnail}
+              <img
+                  src={`${process.env.PUBLIC_URL}${file.thumbnail}`}
                   alt={`${file.name} Thumbnail`}
                   className="pdfv-card-img-top"
                 />
