@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/neuraqlearning/static/css/main.918f4943.css",
-    "main.js": "/neuraqlearning/static/js/main.2f943f5f.js",
+    "main.css": "/neuraqlearning/static/css/main.0f2b9157.css",
+    "main.js": "/neuraqlearning/static/js/main.219de9c9.js",
     "static/media/home-banner-nurse.jpg": "/neuraqlearning/static/media/home-banner-nurse.4187a4847bd8808a8794.jpg",
     "index.html": "/neuraqlearning/index.html",
-    "main.918f4943.css.map": "/neuraqlearning/static/css/main.918f4943.css.map",
-    "main.2f943f5f.js.map": "/neuraqlearning/static/js/main.2f943f5f.js.map"
+    "main.0f2b9157.css.map": "/neuraqlearning/static/css/main.0f2b9157.css.map",
+    "main.219de9c9.js.map": "/neuraqlearning/static/js/main.219de9c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.918f4943.css",
-    "static/js/main.2f943f5f.js"
+    "static/css/main.0f2b9157.css",
+    "static/js/main.219de9c9.js"
   ]
 }
