@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/neuraqlearning/static/css/main.3fc900a6.css",
-    "main.js": "/neuraqlearning/static/js/main.ca28f5c0.js",
-    "static/media/home-banner-learn.png": "/neuraqlearning/static/media/home-banner-learn.f09701e0565f14323f8a.png",
+    "main.css": "/neuraqlearning/static/css/main.440d4bb2.css",
+    "main.js": "/neuraqlearning/static/js/main.f42b759b.js",
+    "static/media/home-banner-learn.png": "/neuraqlearning/static/media/home-banner-learn.3b7d1fc8ffb89870ce23.png",
     "index.html": "/neuraqlearning/index.html",
-    "main.3fc900a6.css.map": "/neuraqlearning/static/css/main.3fc900a6.css.map",
-    "main.ca28f5c0.js.map": "/neuraqlearning/static/js/main.ca28f5c0.js.map"
+    "main.440d4bb2.css.map": "/neuraqlearning/static/css/main.440d4bb2.css.map",
+    "main.f42b759b.js.map": "/neuraqlearning/static/js/main.f42b759b.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fc900a6.css",
-    "static/js/main.ca28f5c0.js"
+    "static/css/main.440d4bb2.css",
+    "static/js/main.f42b759b.js"
   ]
 }
