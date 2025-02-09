@@ -4,7 +4,7 @@ import { db } from "../Firebase/config";
 import { collection, addDoc } from "firebase/firestore";
 import { FaStar } from "react-icons/fa"; // Import star icons from react-icons
 
-const Profile = ({ patientId, userName }) => {
+const Profile = ({ patientId, userName, userGender }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [rating, setRating] = useState(0);
   const [feedback, setFeedback] = useState("");
@@ -45,11 +45,26 @@ const Profile = ({ patientId, userName }) => {
     }
   };
 
+  const getAvatarUrl = () => {
+    if (userGender === "Male") {
+      return "output-onlinegiftools.gif";
+    } else if (userGender === "Female") {
+      return "https://media2.giphy.com/avatars/bronandco/YxpMgT87kdpb.gif";
+    } else {
+      return "user.gif";
+    }
+  };
+
   return (
     <div className="pro-container">
       <h1 className="pro-heading">
         Profile <h1>{userName}</h1>
       </h1>
+
+      {/* Avatar Image */}
+      <div className="avatar-container">
+        <img src={getAvatarUrl()} alt="User Avatar" className="avatar-image" />
+      </div>
 
       {/* Feedback Button */}
       <button className="feedback-button" onClick={() => setIsModalOpen(true)}>

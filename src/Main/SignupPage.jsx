@@ -90,7 +90,7 @@ const SignupPage = () => {
         <button type="submit" disabled={loading}>{loading ? "Signing up..." : "Signup"}</button>
       </form>
 
-      <p>Already registered? <Link to="/">Login</Link></p>
+      <p className="text-dark">Already registered? <Link to="/">Login</Link></p>
     </div>
   );
 };

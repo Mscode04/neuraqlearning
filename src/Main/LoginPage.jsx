@@ -97,7 +97,7 @@ const LoginPage = ({ setIsAuthenticated, setIsNurse }) => {
         </button>
       </form>
 
-      <p>Not registered yet? <Link to="/signup">Sign Up</Link></p>
+      <p className="signup-link text-dark">Not registered yet? <Link to="/signup">Sign Up</Link></p>
 
       {loading && (
         <div className="loading-container">

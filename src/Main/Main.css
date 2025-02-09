@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #288598;
+    background-color: #ffff;
     color: white;
   }
   
@@ -14,7 +14,7 @@ body {
   
   /* Top Section */
   .mainhome_top-section {
-    background-color: #20506b;
+    background-color: #488be3;
     padding: 10px;
     text-align: center;
   }
@@ -32,7 +32,7 @@ body {
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: #20506b;
+    background-color: #488be3;
     display: flex;
     align-items: center;
     justify-content: space-between;

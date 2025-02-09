@@ -5,7 +5,7 @@
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #fff;
+    color: #0056b3;
     margin-bottom: 20px;
   }
   
@@ -165,4 +165,7 @@
     .videov-quote-author {
       font-size: 0.9rem;
     }
+  }
+  .videov-card-body p{
+    color: #488be3;
   }

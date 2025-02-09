@@ -9,7 +9,7 @@ import VideoV from "../Home/VideoV";
 import About from "../Home/About";
 import "./Main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import Explore from "../Home/Explore";
 function Main({ isAuthenticated, isNurse }) {
   const { patientId } = useParams();
   const [userName, setUserName] = useState("");
@@ -50,8 +50,9 @@ function Main({ isAuthenticated, isNurse }) {
           <Route path="/" element={<Home patientId={patientId} userName={userName} userGender={userGender}/>} />
           <Route path="/pdfv" element={<PDFV />} />
           <Route path="/videov" element={<VideoV />} />
-          <Route path="/profile" element={<Profile patientId={patientId} userName={userName} />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/profile" element={<Profile patientId={patientId} userName={userName} userGender={userGender}/>} />
+          <Route path="/about" element={<About  patientId={patientId} userName={userName} />} />
+          <Route path="/explore" element={<Explore  patientId={patientId} userName={userName} />} />
         </Routes>
       </div>
 
