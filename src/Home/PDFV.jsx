@@ -63,8 +63,7 @@ const PDFV = ({ goBack }) => {
         
       </div>
 
-      {/* Heading */}
-      <h1 className="pdfv-heading">Neuraq - Your Learning Partner</h1>
+      
 
       {/* Search & Filter */}
       <div className="pdfv-fil">

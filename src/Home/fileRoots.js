@@ -1,21 +1,30 @@
 export const pdfFiles = [
     {
-      name: "Ai_1",
-      description: "AI Notes",
+      name: "PYTHON BASIC",
+      description: "NOTES FOR PYTHON ",
       pages: 10,
-      filePath: "/Database/Ai_1.pdf",
-      thumbnail: "/Thumbnails/Ai_1.png", // Thumbnail image
-      interest: "Artificial Intelligence, Machine Learning",
-      keywords: "AI, neural networks, data science",
+      filePath: "/Database/python.pdf",
+      thumbnail: "/Thumbnails/python-1.png", // Thumbnail image
+      interest: "Python, Python advance",
+      keywords: "python, python,python data science",
     },
     {
-      name: "DEF",
-      description: "Deep Learning Guide",
+      name: "CP",
+      description: "NOTES FOR C PROGRAMMING",
       pages: 15,
-      filePath: "/Database/DEF.pdf",
-      thumbnail: "/Thumbnails/DEF.png", // Thumbnail image
-      interest: "Deep Learning, Neural Networks",
-      keywords: "Deep Learning, AI, algorithms",
+      filePath: "/Database/CP.pdf",
+      thumbnail: "/Thumbnails/CP-1.png", // Thumbnail image
+      interest: "C Learning, C Programming",
+      keywords: "C programming, C, CP",
+    },
+    {
+      name: "JAVA",
+      description: "NOTES FOR JAVA PROGRAMMING",
+      pages: 15,
+      filePath: "/Database/java.pdf",
+      thumbnail: "/Thumbnails/java.png", // Thumbnail image
+      interest: "Java Learning, Java Programming",
+      keywords: "Java programming, JAVA",
     }
     
   ];

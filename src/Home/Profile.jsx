@@ -72,7 +72,7 @@ const Profile = ({ patientId, userName, userGender }) => {
       </button>
 
       {/* Contact Details Section */}
-      <div className="pro-section">
+      {/* <div className="pro-section">
         <h2 className="pro-section-heading">Contact Details</h2>
         <ul className="pro-list">
           <li className="pro-list-item">
@@ -85,7 +85,7 @@ const Profile = ({ patientId, userName, userGender }) => {
             <strong>Address:</strong> 123 Main St, City, Country
           </li>
         </ul>
-      </div>
+      </div> */}
 
       {/* Feedback Modal */}
       {isModalOpen && (
